@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        String S = "ABCddE";
+        Solution.printInFormat(S);
+    } 
+}
+
+class Solution {
+    static void toLower(String S) {
+        System.out.println(S.toLowerCase());
+    }
+
+    static void printInFormat(String S) {
+        toLower(S);
+    }
+}
