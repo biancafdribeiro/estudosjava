@@ -1,0 +1,34 @@
+package com.mycompany.testesjava;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author NELSON
+ */
+public class Testesjava {
+
+    public static void main(String[] args) {
+     String name = JOptionPane.showInputDialog("Welcome. Enter your name:");
+     JOptionPane.showMessageDialog(null, "Hello, " + name);
+     
+     int yourage = Integer.parseInt(JOptionPane.showInputDialog("Enter your age:"));
+     JOptionPane.showMessageDialog(null, "You are " + yourage + " years old");
+     
+     int friendsage = Integer.parseInt(JOptionPane.showInputDialog("Enter your friend's age:"));
+     JOptionPane.showMessageDialog(null, "Your friend's " + friendsage + " years old");
+     
+     if (yourage == friendsage) {
+        JOptionPane.showMessageDialog(null, "You have the same age.");
+     }
+            else {
+                int older = Math.max(yourage, friendsage);
+
+            if (older == yourage) {
+                JOptionPane.showMessageDialog(null, "You are older.");
+            }
+            else if (older == friendsage) {
+                JOptionPane.showMessageDialog(null, "Your friend's older.");
+            }
+        }
+    }
+}
