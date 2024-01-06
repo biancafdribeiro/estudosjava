@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner(System.in);
+    
+        System.out.print("Digite seu nome:");
+        String nome = teclado.nextLine();
+        
+        System.out.print("Digite sua nota:");
+        float nota = teclado.nextFloat();
+        
+        teclado.nextLine(); 
+        System.out.print("Digite sua escola:");
+        String escola = teclado.nextLine();
+    
+        System.out.printf("Seu nome é %s, sua nota é %.2f, sua escola é %s", nome, nota, escola);
+    }
+}
