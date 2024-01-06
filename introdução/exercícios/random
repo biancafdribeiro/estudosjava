@@ -1,0 +1,13 @@
+package com.mycompany.testesjava;
+import java.util.Random;
+
+public class Testesjava {
+
+    public static void main(String[] args) {
+        
+        Random random = new Random();
+        
+           int x = random.nextInt(6) + 1; // valor entre 6 e 1
+           System.out.println(x);
+    }
+}
