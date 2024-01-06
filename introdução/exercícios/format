@@ -1,0 +1,21 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    
+    float a = 5.43f;
+    float b = 2.653f;
+    
+    Geeks.printInFormat(a, b);
+	}
+}
+
+class Geeks{
+    
+    static void printInFormat(float a, float b){
+        float result = a/b;
+        
+        System.out.format("%f%n", result);
+        System.out.format("%.3f", result);
+    }    
+    
+}
