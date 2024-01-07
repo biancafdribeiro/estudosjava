@@ -1,0 +1,31 @@
+package com.mycompany.testesjava;
+import java.util.Scanner;
+
+public class Testesjava {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+            System.out.print("Digite um número:");
+            int numero = scanner.nextInt();
+            
+            if (numero >= 50 && numero <= 100) {
+                System.out.println("Você perdeu o jogo.");
+           }
+            else if (numero >= 101 && numero % 2 == 0) {
+                System.out.println("Você continua no jogo.");
+            }
+            
+            System.out.print("Digite uma letra:");
+            String letra = scanner.next(); //não usa line porque
+                                           //é apenas uma letra
+            
+            if (!letra.equals("B") && !letra.equals("b")) {
+                System.out.println("Você ganhou o jogo.");
+            }
+            else {
+                System.out.println("Você perdeu o jogo.");
+            }
+    }
+}
