@@ -1,0 +1,40 @@
+package com.mycompany.testesjava;
+import java.util.ArrayList;
+
+public class Testesjava {
+
+    public static void main(String[] args) {
+        
+        //redimensiona automaticamente quando os elementos são adicionados
+        ArrayList<String> roupas = new ArrayList<String>(7);
+        
+        //add: adiciona os elementos na lista
+        roupas.add("Vestido"); 
+        roupas.add("Saia");
+        roupas.add("Shorts");
+        roupas.add("Calças");
+        roupas.add("Blusa");
+        
+        //trimToSize: retira o espaço em branco 
+        roupas.trimToSize();
+        
+        //set: substitui um elemento por outro (índice do elemento inicial, novo elemento)
+        roupas.set(3, "Legging");
+        
+        //remove: remove um elemento pelo seu índice
+        roupas.remove(4);
+        
+        //clear: limpa toda a lista
+        //roupas.clear();
+                        
+        //get: retorna o elemento que está na posição especificada 
+        for (int i = 0; i < roupas.size(); i++) {
+        System.out.println(roupas.get(i));
+    }
+       
+        //toArray: transforma o arrayList em um array
+        String[] arrayRoupas = new String[0];
+        arrayRoupas = roupas.toArray(arrayRoupas);
+        
+     }
+}
