@@ -1,0 +1,29 @@
+package com.mycompany.testesjava;
+import java.util.ArrayList;
+
+public class Testesjava {
+
+    public static void main(String[] args) {
+        
+        ArrayList<ArrayList<String>> vestuario = new ArrayList<ArrayList<String>>();
+        ArrayList<String> roupas = new ArrayList<String>(7);
+        
+        roupas.add("Vestido"); 
+        roupas.add("Saia");
+        roupas.add("Shorts");
+        roupas.add("Calças");
+        roupas.add("Blusa");
+        
+        ArrayList<String> calcados = new ArrayList<String>();
+        
+        calcados.add("Tênis");
+        calcados.add("Bota");
+        calcados.add("Sandália");
+        
+        vestuario.add(roupas);
+        vestuario.add(calcados);
+        
+        System.out.println(vestuario);
+        
+     }
+}
