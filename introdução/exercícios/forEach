@@ -1,0 +1,17 @@
+package com.mycompany.testesjava;
+public class Testesjava {
+
+    public static void main(String[] args) {
+        
+
+        String[] names = new String[3];
+        
+        names[0] = "Bianca";
+        names[1] = "João";
+        names[2] = "Paulo";
+        
+        for (String i : names) {
+            System.out.println(i);
+        }
+    }
+}
