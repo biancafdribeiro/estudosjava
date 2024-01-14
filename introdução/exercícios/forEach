@@ -9,7 +9,8 @@ public class Testesjava {
         names[0] = "Bianca";
         names[1] = "João";
         names[2] = "Paulo";
-        
+
+        //for (TipoDaVariavel variavel : colecao) 
         for (String i : names) {
             System.out.println(i);
         }
