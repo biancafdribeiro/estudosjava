@@ -35,8 +35,7 @@ public class Testesjava {
             System.out.println("Seu nome não está na lista.");
         }*/
         
-        //na busca linear com for-each, a variável i vai representar diretamente os elementos do array
-        //e não os índices;
+        //na busca linear com for-each, a variável i vai representar diretamente os elementos do array e não os índices;
         boolean encontrou = false;
         for (String elemento : names) {
             if (elemento.equalsIgnoreCase(nome)) {
