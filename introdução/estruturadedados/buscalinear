@@ -1,0 +1,56 @@
+package com.mycompany.testesjava;
+import java.util.Scanner;
+
+public class Testesjava {
+
+    public static void main(String[] args) {
+        
+        String[] names = new String[6];
+        
+        names[0] = "Bianca";
+        names[1] = "João";
+        names[2] = "Paulo";
+        names[3] = "Maria";
+        names[4] = "Eduardo";
+        names[5] = "Alice";
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o seu nome:");
+        String nome = scanner.nextLine();
+        
+        //busca linear com for
+        /*boolean encontrou = false;
+        for (int i =0; i < names.length; i++) {
+            String elemento = names[i]; //atribui o valor do elemento no índice i do array names à variavel elemento
+            if (elemento.equals(nome)) {
+                encontrou = true;
+                break;
+            }
+        }
+        
+        if (encontrou == true) {
+            System.out.println("Seu nome está na lista.");
+        }
+        else {
+            System.out.println("Seu nome não está na lista.");
+        }*/
+        
+        //na busca linear com for-each, a variável i vai representar diretamente os elementos do array
+        //e não os índices;
+        boolean encontrou = false;
+        for (String elemento : names) {
+            if (elemento.equalsIgnoreCase(nome)) {
+                encontrou = true;
+                break;
+            }
+        }
+        
+        if (encontrou == true)
+        {
+            System.out.print("Seu nome está na lista");
+        }
+        else {
+            System.out.println("Seu nome não está na lista.");
+        } 
+    }
+}
